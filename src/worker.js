@@ -18,7 +18,7 @@ class PipelineFactory {
             this.instance = pipeline(this.task, this.model, {
                 dtype: {
                     encoder_model: 'fp32',
-                    decoder_model_merged: 'q4', // or 'fp32' ('fp16' is broken)
+                    decoder_model_merged: 'fp32', // or 'fp32' ('fp16' is broken)
                 },
                 device: 'webgpu',
                 progress_callback,
@@ -29,7 +29,7 @@ class PipelineFactory {
     }
 }
 
-self.addEventListener("message", async (event) => {
+self.addEventListener("message", async(event) => {
     const message = event.data;
 
     // Do some work...
@@ -49,7 +49,7 @@ class AutomaticSpeechRecognitionPipelineFactory extends PipelineFactory {
     static model = null;
 }
 
-const transcribe = async ({
+const transcribe = async({
     audio,
     model,
     subtask,

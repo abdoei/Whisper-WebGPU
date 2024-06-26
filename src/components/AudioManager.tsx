@@ -128,6 +128,7 @@ const MODELS = Object.entries({
     'onnx-community/whisper-tiny': 120, // 33 + 87
     'onnx-community/whisper-base': 206, // 83 + 123
     'onnx-community/whisper-small': 586, // 353 + 233
+    'omartariq612/whisper_onnx_small_test' : 1127, // 774 + 353
 
     // Distil Whisper (English-only)
     'onnx-community/distil-small.en': 538, // 353 + 185
